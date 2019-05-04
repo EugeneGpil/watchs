@@ -6,8 +6,12 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-a{
+.button{
     text-decoration: none;
+    text-transform: uppercase;
+    color: #fefff4;
+    display: block;
+    text-align: center;
 }
 .wrapper{
     background-image: url('../img/backround.png');
@@ -17,18 +21,25 @@ a{
     height: 100vh;
 }
 .header{
-    text-align: center;
-    padding: 25px 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__headline{
+    display: block;
+    margin: 0;
 }
 .header__text{
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 4vh;
     color: #fffffa;
+    font-weight: 400;
 }
 .header__main-text{
-    font-size: 60px;
+    font-size: 7vh;
     color: #ffca08;
-    padding-right:  30px;
+    padding-right:  2vh;
 }
 .main-content-container{
     display: flex;
@@ -97,28 +108,28 @@ a{
     font-weight: bold;
 }
 .main-section__button{
-    text-transform: uppercase;
     padding: 35px 0;
-    background-color: #ffcc01;
     font-size: 36px;
-    color: #fefff4;
     font-weight: bold;
     text-shadow: 1px 1px 5px black;
-    display: block;
+    background-color: #ffcc01;
     width: 435px;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 .main-left-section__main-info{
+    background-color: #fe0100;
+    padding-right: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main-left-section__main-info-text{
     text-transform: uppercase;
     color: #ffe8ff;
     font-size: 25px;
     font-weight: bold;
-    background-color: #fe0100;
-    padding: 24px 0;
-    padding-right: 13px;
-    padding-left: 170px;
 }
 .main-left-section__main-info-border{
     border-style: solid;
@@ -127,21 +138,93 @@ a{
     padding-left: 0;
     border-color: #fe0100;
     border-left: none;
+    height: 8vh;
 }
 .main-left-section__info-text{
     color: #efefef;
     font-size: 18px;
     text-transform: uppercase;
-    line-height: 30px;
+    line-height: 1.5;
 }
 .main-left-section__info-container{
-    padding-left: 150px;
-}
-.main-left-section__info{
-    padding-top: 52px;
+    padding-left: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 82vh;
 }
 .main-left-section__info-image-container{
     margin-left: 47px;
+}
+.main-left-section__medals{
+    display: flex;
+    justify-content: space-around;
+}
+.main-right-section{
+    padding-right: 15vh;
+    height: 90vh;
+}
+.main-right-section__read-more-section{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22% 0;
+}
+.main-right-section__main-text{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+.main-right-section__main-text_accent{
+    color: #ffcb00;
+}
+.main-right-section__read-more-text{
+    font-size: 20px;
+}
+.main-right-section__read-more-button{
+    padding: 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+    width: 280px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ffcb00;
+}
+.main-right-section__delivery-section{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+.main-right-section__delivery-details-container{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-right-section__delivery-headline{
+    font-size: 28px;
+}
+.main-right-section__delivery-detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-right-section__delivery-detail:first-child{
+    margin-top: 0;
+}
+.main-right-section__delivery-detail-text{
+    color: white;
+    font-size: 26px;
+    font-weight: 300;
+}
+.main-right-section__delivery-detail-icon{
+    padding-right: 30px;
 }
 /*
 color="#ffca08"
@@ -153,5 +236,6 @@ color="#edffff"
 color="#ffcc01"
 2
 4
-
+color="#ffffff"
+82
 */
