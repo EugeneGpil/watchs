@@ -29,6 +29,7 @@
 .header__headline{
     display: block;
     margin: 0;
+    text-align: center;
 }
 .header__text{
     text-transform: uppercase;
@@ -45,6 +46,7 @@
 .main-content-container{
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 .main-section{
     flex-basis: auto;
@@ -223,16 +225,17 @@
 .main-right-section__delivery-detail-icon{
     padding-right: 30px;
 }
-/*
-color="#ffca08"
-color="#fffffa"
-color="#fafafc"
-30
-32
-color="#edffff"
-color="#ffcc01"
-2
-4
-color="#ffffff"
-82
-*/
+@media (max-width: 1450px){
+    .main-content-container{
+        justify-content: center;
+    }
+    .main-section{
+        order: 1;
+    }
+    .main-left-section{
+        order: 2;
+    }
+    .main-right-section{
+        order: 3;
+    }
+}
