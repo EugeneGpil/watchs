@@ -4,43 +4,36 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Rubik', sans-serif;}
 .button{
     text-decoration: none;
     text-transform: uppercase;
     color: #fefff4;
     display: block;
-    text-align: center;
-}
+    text-align: center;}
 .wrapper{
     background-image: url('../img/backround.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-}
+    background-position: center;}
 .header{
-    height: 10vh;
+    padding: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;}
 .header__headline{
     display: block;
-    margin: 0;
-}
+    margin: 0;}
 .header__text{
     text-transform: uppercase;
-    font-size: 4vh;
+    font-size: 40px;
     color: #fffffa;
-    font-weight: 400;
-}
+    font-weight: 400;}
 .header__main-text{
-    font-size: 7vh;
+    font-size: 60px;
     color: #ffca08;
-    padding-right:  2vh;
-}
+    padding-right:  20px;
+    font-weight: 500;}
 .main-content-container{
     display: flex;
     justify-content: space-between;
@@ -129,8 +122,7 @@
     text-transform: uppercase;
     color: #ffe8ff;
     font-size: 25px;
-    font-weight: bold;
-}
+    font-weight: bold;}
 .main-left-section__main-info-border{
     border-style: solid;
     border-width: 4px;
@@ -138,31 +130,24 @@
     padding-left: 0;
     border-color: #fe0100;
     border-left: none;
-    height: 8vh;
-}
+    height: 90px;}
+.main-left-section__info{
+    padding-top: 18px;}
 .main-left-section__info-text{
     color: #efefef;
     font-size: 18px;
     text-transform: uppercase;
-    line-height: 1.5;
-}
+    line-height: 1.5;}
 .main-left-section__info-container{
-    padding-left: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 82vh;
-}
+    padding-left: 100px;}
 .main-left-section__info-image-container{
-    margin-left: 47px;
-}
+    margin-left: 47px;}
 .main-left-section__medals{
     display: flex;
     justify-content: space-around;
 }
 .main-right-section{
-    padding-right: 15vh;
-    height: 90vh;
+    padding-right: 100px;
 }
 .main-right-section__read-more-section{
     height: 50%;
