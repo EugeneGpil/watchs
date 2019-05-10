@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Watchs</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -73,7 +74,7 @@
                         <div class="main-section__discount-percent">-72%</div>
                     </div>
                 </div>
-                <a class="button main-section__button" href="#">заказать</a>
+                <a id="openOrder" class="button button-to-order" href="#">заказать</a>
             </section>
             <section class="main-right-section">
                 <div class="main-right-section__read-more-section">
@@ -121,5 +122,24 @@
             </section>
         </section>
     </div>
+    <div id="order__wrapper">
+        <div class="order__window">
+            <a id="closeOrder" class="order__close-button" href="#">
+                <i class="fas fa-times order__close-simbol"></i>
+            </a>
+            <p class="order__hint order__element">Оставьте ваши контактные данные и наш менеджер свяжется с вами</p>
+            <p class="order__element order__hint-input"><label for="name">Ваше имя</label></p>
+            <p class="order__element order__input-name-container">
+                <input class=" order__input-name" type="text" name="name" placeholder="Иван">
+            </p>
+            <p class="order__element order__hint-input"><label for="phone">Ваш номер телефона</label></p>
+            <p class="order__element order__input-name-container">
+                <input class=" order__input-name" type="number" name="phone" placeholder="8 999 123 45 67">
+            </p>
+            <a class="button button-to-order order__button-to-order" href="#">заказать</a>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

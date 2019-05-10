@@ -12,6 +12,7 @@
     color: #fefff4;
     display: block;
     text-align: center;
+    cursor: pointer;
 }
 .wrapper{
     background-image: url('../img/backround.png');
@@ -112,7 +113,7 @@
     color: #edffff;
     font-weight: bold;
 }
-.main-section__button{
+.button-to-order{
     padding: 35px 0;
     font-size: 36px;
     font-weight: bold;
@@ -226,6 +227,61 @@
 }
 .main-right-section__delivery-detail-icon{
     padding-right: 30px;
+}
+#order__wrapper{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+.order__window{
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url("../img/background_form.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order__close-button{
+    display: block;
+    align-self: flex-end;
+}
+.order__close-simbol{
+    font-size: 44px;
+    color: white;
+}
+.order__hint{
+    color: white;
+    font-size: 30px;
+}
+.order__element{
+    margin-top: 30px;
+}
+.order__hint-input{
+    color: white;
+    font-size: 25px;
+    align-self: flex-start;
+    padding-left: 60px;
+}
+.order__input-name{
+    font-size: 30px;
+    padding: 20px;
+    width: 100%;
+}
+.order__input-name-container{
+    width: 100%;
+}
+.order__button-to-order{
+    margin-top: 80px;
 }
 @media (max-width: 1450px){
     .main-content-container{
